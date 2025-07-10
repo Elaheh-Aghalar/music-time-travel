@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  background-color: #f0f2f5;
+  color: #3a2f2b;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-top: 1rem;
+}
+
+header p {
+  color: #5d4c47;
+  margin-bottom: 2rem;
+}
+
+.albums, .memories, .ads, .fashion {
+  margin-top: 2.5rem;
+  text-align: right;
+}
+
+.album-list, .ad-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.album-card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.album-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.album-card a {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #c0392b;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.album-card a:hover {
+  background-color: #922b21;
+}
+
+.memories ul {
+  list-style: disc;
+  padding-right: 1.5rem;
+  color: #55504f;
+  font-size: 1rem;
+}
+
+.ad-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.fashion p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #55504f;
+}
+
+.back-btn {
+  display: inline-block;
+  margin: 2.5rem 0;
+  background-color: #7f8c8d;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #636e72;
+}
+
+/* واکنش‌گرا */
+@media (max-width: 600px) {
+  header h1 { font-size: 2rem; }
+  .album-card a, .back-btn { padding: 0.5rem; }
+}
