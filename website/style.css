@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  background-color: #fbe7c6;
+  color: #4e342e;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #6e4c3f;
+  margin-bottom: 2rem;
+}
+
+.decade-selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.decade-btn {
+  background-color: #d35400;
+  color: #fff;
+  padding: 1rem 0;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.decade-btn:hover {
+  background-color: #b84300;
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
